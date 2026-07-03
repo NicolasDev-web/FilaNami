@@ -140,46 +140,10 @@ Dicas:
 - Primeiro crie um usuário/conta via endpoint de registro (se existir) ou use credenciais de seed.
 - Use o endpoint de login para obter token (se a API usa JWT) e inclua-o no header Authorization nas requisições protegidas.
 
----
-
-## Testes
-No momento não há suíte de testes automatizados (nenhuma pasta tests detectada). Recomenda-se adicionar testes unitários/integrados para controllers e repositórios usando Jest / Vitest ou similar.
-
----
-
-## Boas práticas e contribuições
-- Há um guia de padrões de commit em `backend/padroescommit.md`. Siga esse padrão ao submeter PRs.
-- Processo sugerido:
-  1. Abra uma issue descrevendo a mudança.
-  2. Crie uma branch com nome descritivo.
-  3. Envie PR com descrição clara e screenshots (se aplicável).
-- Código e commits claros aceleram revisão.
-
----
-
 ## Deploy (resumo)
 - Backend: publicar em um serviço Node (Heroku, Render, DigitalOcean App Platform, Railway), certificando-se de definir `DATABASE_URL` e outras variáveis de ambiente (PORT, JWT_SECRET).
 - Frontend: build com `npm run build` e servir via CDN / serviço estático (Netlify, Vercel) ou integrado ao backend.
 - Em produção, execute `npx prisma migrate deploy` para aplicar migrations e `npx prisma generate` para garantir o client.
-
----
-
-## Observações técnicas / próximas melhorias sugeridas
-- Adicionar CI (GitHub Actions) para lint, testes e build.
-- Incluir testes automatizados (unitários e de integração).
-- Centralizar configuração de variáveis de ambiente e documentá-las no README com exemplos.
-- Adicionar documentação das rotas em OpenAPI (Swagger) além da coleção Postman.
-
----
-
+  
 ## Licença
-Consulte o arquivo LICENSE na raiz do repositório.
-
----
-
-## Contato
-Para dúvidas, melhorias ou reportar bugs, abra uma issue no repositório ou entre em contato com o mantenedor (usuário do GitHub: NicolasDev-web).
-
----
-
-*Este README foi gerado automaticamente pelo assistente. Se quiser que eu inclua os scripts exatos dos package.json ou extraia as variáveis de .env.example e as liste aqui, eu posso atualizar o README com essas informações.*
+Consulte o arquivo LICENSE na raiz do repositório
